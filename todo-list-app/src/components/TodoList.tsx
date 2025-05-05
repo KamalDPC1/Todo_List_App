@@ -90,20 +90,20 @@ const TodoList: React.FC = () => {
         {filteredTodos.map(todo => (
           <div 
             key={todo.id} 
-            className={`flex items-center justify-between text-black p-4 border-b ${todo.completed ? 'bg-green-50 line-through text-gray-500' : ''}`}
+            className={`flex items-center justify-between p-4 border-b ${todo.completed ? 'bg-green-50 line-through text-gray-500' : ''}`}
           >
             <div className="flex items-center">
               <input 
                 type="checkbox"
                 checked={todo.completed}
                 onChange={() => toggleTodo(todo.id)}
-                className="mr-3 form-checkbox text-blue-500"
+                className="mr-3 form-checkbox text-blue-600"
               />
               <span>{todo.text}</span>
             </div>
             <button 
               onClick={() => deleteTodo(todo.id)}
-              className="text-red-500 hover:text-red-700"
+              className="text-red-600 hover:text-red-800"
               aria-label="Delete todo"
             >
               <FaTrash />
