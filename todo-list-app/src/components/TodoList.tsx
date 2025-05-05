@@ -90,7 +90,7 @@ const TodoList: React.FC = () => {
         {filteredTodos.map(todo => (
           <div 
             key={todo.id} 
-            className={`flex items-center justify-between p-4 border-b ${todo.completed ? 'bg-green-50 line-through text-gray-500' : ''}`}
+            className={`flex items-center text-black justify-between p-4 border-b ${todo.completed ? 'bg-green-50 line-through text-gray-500' : ''}`}
           >
             <div className="flex items-center">
               <input 
